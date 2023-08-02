@@ -10,11 +10,20 @@ public class Person {
         this.age = age;
     }
 
-    //override
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+//override
 
 
     @Override
     public String toString() {
-        return super.toString();
+        return  "PLAYER:" + "name='" + name + ' ' +
+                "age='" + age +' ' ;
+
     }
 }

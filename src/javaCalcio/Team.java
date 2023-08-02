@@ -6,10 +6,15 @@ import java.util.List;
 public class Team {
 
     private List<Player> playerList;
-    private List<Trainer> trainerList;
+    private Trainer trainer;
 
-    public Team(List<Player> playerList, List<Trainer> trainerList) {
+    public Team(List<Player> playerList, Trainer trainer) {
         this.playerList =new ArrayList<>();
-        this.trainerList = new ArrayList<>();
+        this.trainer =trainer;
+    }
+
+    @Override
+    public String toString() {
+        return "Trainer: " + trainer+ ' ';
     }
 }
